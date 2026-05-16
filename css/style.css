@@ -172,7 +172,7 @@ body {
 
 /* Current Focus */
 .current-focus {
-  padding-block: 5rem;
+  padding-block: 6rem;
   border-top: 1px solid var(--border);
 }
 
