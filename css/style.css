@@ -363,6 +363,50 @@ body {
 .project-links a:focus-visible {
   text-decoration: underline;
 }
+
+/* Learning Log */
+.learning-preview {
+  padding-block: 6rem;
+  border-top: 1px solid var(--border);
+}
+
+.log-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.log-item {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 1.5rem;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease;
+}
+
+.log-item:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
+.log-date {
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.log-item h3 {
+  margin-bottom: 0.75rem;
+}
+
+.log-item:last-child {
+  color: var(--muted);
+}
+
 /* Media Queries */
 
 @media (max-width: 760px) {
