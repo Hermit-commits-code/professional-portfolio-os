@@ -517,6 +517,11 @@ body {
   color: var(--muted);
 }
 
+/* Projects HTML */
+.projects-page {
+  padding-block: 6rem;
+}
+
 /* Media Queries */
 
 @media (max-width: 760px) {
