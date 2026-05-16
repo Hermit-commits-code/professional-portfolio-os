@@ -407,6 +407,34 @@ body {
   color: var(--muted);
 }
 
+/* Contact CTA */
+.contact-cta {
+  padding-block: 6rem;
+  border-top: 1px solid var(--border);
+}
+
+.cta-card {
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) * 1.5);
+  background: var(--surface);
+  padding: clamp(2rem, 5vw, 4rem);
+}
+
+.cta-card h2 {
+  max-width: 720px;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  margin-bottom: 1rem;
+}
+
+.cta-card p:not(.eyebrow) {
+  max-width: 680px;
+  color: var(--muted);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
 /* Media Queries */
 
 @media (max-width: 760px) {
