@@ -522,6 +522,11 @@ body {
   padding-block: 6rem;
 }
 
+/* Learning Log */
+.learning-log-page {
+  padding-block: 0 6rem;
+}
+
 /* Media Queries */
 
 @media (max-width: 760px) {
