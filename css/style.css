@@ -470,6 +470,53 @@ body {
   color: var(--accent);
 }
 
+/* Roadmap HTML CSS */
+
+.page-hero {
+  padding-block: 6rem;
+}
+
+.page-hero h1 {
+  max-width: 900px;
+  font-size: clamp(2.75rem, 6vw, 5rem);
+  line-height: 1.05;
+  letter-spacing: -0.05em;
+  margin-bottom: 1.5rem;
+}
+
+.page-hero p:last-child {
+  max-width: 720px;
+  color: var(--muted);
+  font-size: 1.15rem;
+}
+
+.roadmap-stage {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 1.5rem;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease;
+}
+
+.roadmap-stage:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
+.roadmap-stage.active {
+  border-color: var(--accent);
+}
+
+.roadmap-stage h2 {
+  margin-bottom: 0.75rem;
+}
+
+.roadmap-stage p {
+  color: var(--muted);
+}
+
 /* Media Queries */
 
 @media (max-width: 760px) {
