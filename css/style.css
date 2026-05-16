@@ -271,6 +271,9 @@ body {
 .roadmap-item.active {
   border-color: var(--accent);
 }
+.section-actions {
+  margin-top: 2rem;
+}
 
 /* Featured Projects */
 .featured-projects {
