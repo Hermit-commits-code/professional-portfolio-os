@@ -3,7 +3,7 @@
   --surface: #111827;
   --surface-light: #1f2937;
   --text: #f8fafc;
-  --muted: #94a3b8;
+  --muted: #a8b3cf;
   --border: #334155;
   --accent: #38bdf8;
 
@@ -178,7 +178,7 @@ body {
 
 .section-header {
   max-width: 720px;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .section-header h2 {
@@ -203,7 +203,17 @@ body {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: var(--surface);
+  min-height: 180px;
   padding: 1.5rem;
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    background 160ms ease;
+}
+
+.focus-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
 }
 
 .focus-card h3 {
