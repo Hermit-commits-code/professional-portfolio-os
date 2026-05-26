@@ -4,50 +4,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/output.css">
   <title>Joseph Chu | OS</title>
 </head>
 
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="site-logo">Joseph Chu</a>
-      <nav class="site-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="roadmap.html">Roadmap</a>
-        <a href="projects.html">Projects</a>
-        <a href="learning-log.html">Learning Log</a>
-        <a href="#contact">Contact</a>
+<body class="bg-slate-950 text-slate-50 antialiased">
+  <header class="border-b border-slate-700 bg-slate-900">
+    <div class="mx-auto flex w-[min(100%-2rem,1120px)] items-center justify-between gap-6 py-4">
+      <a href="index.html" class="text-base font-semibold text-slate-50 no-underline">
+        Joseph Chu
+      </a>
+
+      <nav class="flex flex-wrap items-center gap-4" aria-label="Main navigation">
+        <a class="text-sm text-slate-400 no-underline transition hover:text-sky-400 focus-visible:text-sky-400"
+          href="index.html">Home</a>
+        <a class="text-sm text-slate-400 no-underline transition hover:text-sky-400 focus-visible:text-sky-400"
+          href="roadmap.html">Roadmap</a>
+        <a class="text-sm text-slate-400 no-underline transition hover:text-sky-400 focus-visible:text-sky-400"
+          href="projects.html">Projects</a>
+        <a class="text-sm text-slate-400 no-underline transition hover:text-sky-400 focus-visible:text-sky-400"
+          href="learning-log.html">Learning Log</a>
+        <a class="text-sm text-slate-400 no-underline transition hover:text-sky-400 focus-visible:text-sky-400"
+          href="#contact">Contact</a>
       </nav>
     </div>
-
   </header>
   <main>
-    <section class="page-hero">
-      <div class="container">
-        <p class="eyebrow">Learning Log</p>
+    <section class="py-24">
+      <div class="mx-auto w-[min(100%-2rem,1120px)]">
+        <p class="mb-4 text-sm font-bold uppercase tracking-[0.08em] text-sky-400">
+          Learning Log
+        </p>
 
-        <h1>Documenting the build, the mistakes, and the improvements.</h1>
+        <h1
+          class="mb-6 max-w-5xl text-5xl font-bold leading-tight tracking-[-0.05em] text-slate-50 md:text-6xl lg:text-7xl">
+          Documenting the build, the mistakes, and the improvements.
+        </h1>
 
-        <p>
+        <p class="max-w-3xl text-lg leading-8 text-slate-400">
           This log tracks what I’m learning, building, debugging, and refining as I
           move through the Serious Stack roadmap.
         </p>
       </div>
     </section>
 
-    <section class="learning-log-page">
-      <div class="container">
-        <div class="log-list">
-          <article class="log-entry">
-            <div class="log-marker"></div>
+    <section class="pb-24">
+      <div class="mx-auto w-[min(100%-2rem,1120px)]">
+        <div class="flex flex-col gap-5">
+          <article class="flex gap-5 rounded-2xl border border-sky-400 bg-slate-900 p-6">
+            <div class="mt-2 h-2.5 w-2.5 shrink-0 rounded-full bg-sky-400"></div>
 
-            <div class="log-content">
-              <p class="log-meta">Current · Stage 1</p>
+            <div class="max-w-4xl">
+              <p class="mb-4 text-sm font-bold uppercase tracking-[0.08em] text-sky-400">
+                Current · Stage 1
+              </p>
 
-              <h2>Building the first version of the Portfolio OS</h2>
+              <h2 class="mb-4 text-2xl font-bold leading-tight text-slate-50">
+                Building the first version of the Portfolio OS
+              </h2>
 
-              <p>
+              <p class="leading-7 text-slate-400">
                 I started the homepage using semantic HTML and CSS while focusing on
                 spacing systems, responsive layout structure, reusable sections, and
                 consistent visual hierarchy.
@@ -55,18 +71,22 @@
             </div>
           </article>
 
-          <article class="log-entry">
-            <div class="log-marker"></div>
+          <article class="flex gap-5 rounded-2xl border border-slate-700 bg-slate-900 p-6">
+            <div class="mt-2 h-2.5 w-2.5 shrink-0 rounded-full bg-sky-400"></div>
 
-            <div class="log-content">
-              <p class="log-meta">Stage 1 · HTML/CSS</p>
+            <div class="max-w-4xl">
+              <p class="mb-4 text-sm font-bold uppercase tracking-[0.08em] text-sky-400">
+                Stage 1 · HTML/CSS
+              </p>
 
-              <h2>Practicing frontend fundamentals</h2>
+              <h2 class="mb-4 text-2xl font-bold leading-tight text-slate-50">
+                Practicing frontend fundamentals
+              </h2>
 
-              <p>
+              <p class="leading-7 text-slate-400">
                 Current focus areas include Flexbox, Grid, responsive design,
-                accessibility basics, semantic structure, and reusable component
-                patterns.
+                accessibility basics, semantic structure, Tailwind CSS, and reusable
+                component patterns.
               </p>
             </div>
           </article>
@@ -74,14 +94,26 @@
       </div>
     </section>
   </main>
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>&copy; 2026 Joseph Chu. Built with HTML and CSS.</p>
-      <nav class="footer-nav" aria-label="footer navigation">
-        <a href="index.html">Home</a>
-        <a href="roadmap.html">Roadmap</a>
-        <a href="projects.html">Projects</a>
-        <a href="learning-log.html">Learning Log</a>
+  <!-- Footer -->
+  <footer class="border-t border-slate-700 py-8">
+    <div class="mx-auto flex w-[min(100%-2rem,1120px)] flex-col gap-4 md:flex-row md:items-center md:justify-between">
+      <p class="text-sm text-slate-400">
+        &copy; 2026 Joseph Chu. Built with HTML, CSS, and Tailwind CSS.
+      </p>
+
+      <nav class="flex flex-wrap gap-4" aria-label="Footer navigation">
+        <a href="index.html" class="text-sm text-slate-400 hover:text-sky-400 focus-visible:text-sky-400">
+          Home
+        </a>
+        <a href="roadmap.html" class="text-sm text-slate-400 hover:text-sky-400 focus-visible:text-sky-400">
+          Roadmap
+        </a>
+        <a href="projects.html" class="text-sm text-slate-400 hover:text-sky-400 focus-visible:text-sky-400">
+          Projects
+        </a>
+        <a href="learning-log.html" class="text-sm text-slate-400 hover:text-sky-400 focus-visible:text-sky-400">
+          Learning Log
+        </a>
       </nav>
     </div>
   </footer>

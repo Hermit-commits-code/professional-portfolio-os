@@ -4,104 +4,143 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/output.css">
   <title>Joseph Chu | OS</title>
 </head>
 
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="site-logo">Joseph Chu</a>
-      <nav class="site-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="roadmap.html">Roadmap</a>
-        <a href="projects.html">Projects</a>
-        <a href="learning-log.html">Learning Log</a>
-        <a href="#contact">Contact</a>
+<body class="bg-slate-950 text-slate-50 antialiased">
+  <header class="border-b border-slate-700 bg-slate-900">
+    <div class="mx-auto flex w-[min(100%-2rem,1120px)] items-center justify-between gap-6 py-4">
+      <a href="index.html" class="text-base font-semibold text-slate-50 no-underline">
+        Joseph Chu
+      </a>
+
+      <nav class="flex flex-wrap items-center gap-4" aria-label="Main navigation">
+        <a class="text-sm text-slate-400 no-underline transition hover:text-sky-400 focus-visible:text-sky-400"
+          href="index.html">Home</a>
+        <a class="text-sm text-slate-400 no-underline transition hover:text-sky-400 focus-visible:text-sky-400"
+          href="roadmap.html">Roadmap</a>
+        <a class="text-sm text-slate-400 no-underline transition hover:text-sky-400 focus-visible:text-sky-400"
+          href="projects.html">Projects</a>
+        <a class="text-sm text-slate-400 no-underline transition hover:text-sky-400 focus-visible:text-sky-400"
+          href="learning-log.html">Learning Log</a>
+        <a class="text-sm text-slate-400 no-underline transition hover:text-sky-400 focus-visible:text-sky-400"
+          href="#contact">Contact</a>
       </nav>
     </div>
-
   </header>
   <main>
-    <section class="page-hero">
-      <div class="container">
-        <p class="eyebrow">Projects</p>
+    <section class="py-24">
+      <div class="mx-auto w-[min(100%-2rem,1120px)]">
+        <p class="mb-4 text-sm font-bold uppercase tracking-[0.08em] text-sky-400">
+          Projects
+        </p>
 
-        <h1>Projects built to reinforce the roadmap.</h1>
+        <h1
+          class="mb-6 max-w-5xl text-5xl font-bold leading-tight tracking-[-0.05em] text-slate-50 md:text-6xl lg:text-7xl">
+          Projects built to reinforce the roadmap.
+        </h1>
 
-        <p>
+        <p class="max-w-3xl text-lg leading-8 text-slate-400">
           This page tracks current, planned, and future builds connected to each
           stage of the Serious Stack roadmap.
         </p>
       </div>
     </section>
-
-    <section class="projects-page">
-      <div class="container">
-        <div class="projects-grid">
-          <article class="project-card">
-            <div class="project-status">
-              <span class="status-dot"></span>
+    <section class="pb-24">
+      <div class="mx-auto w-[min(100%-2rem,1120px)]">
+        <div class="grid gap-4 lg:grid-cols-2">
+          <article
+            class="flex min-h-[300px] flex-col rounded-2xl border border-sky-400 bg-slate-900 p-6 transition hover:-translate-y-1 hover:border-sky-400">
+            <div class="mb-4 inline-flex items-center gap-3 text-sm font-semibold text-green-400">
+              <span class="h-2.5 w-2.5 rounded-full bg-current"></span>
               In Progress
             </div>
 
-            <h2>Professional Portfolio OS</h2>
+            <h2 class="mb-4 text-2xl font-bold text-slate-50">
+              Professional Portfolio OS
+            </h2>
 
-            <p>
-              A proof-of-work portfolio focused on semantic HTML, responsive
-              layout, documentation, and long-term engineering growth.
+            <p class="mb-6 leading-7 text-slate-400">
+              A proof-of-work portfolio focused on semantic HTML, responsive layout,
+              documentation, and long-term engineering growth.
             </p>
 
-            <ul class="project-tags" aria-label="Project technologies">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>GitHub</li>
-              <li>Responsive Design</li>
+            <ul class="mb-8 mt-4 flex flex-wrap gap-3" aria-label="Project technologies">
+              <li class="rounded-full border border-slate-700 px-3 py-1.5 text-sm text-slate-400">HTML</li>
+              <li class="rounded-full border border-slate-700 px-3 py-1.5 text-sm text-slate-400">CSS</li>
+              <li class="rounded-full border border-slate-700 px-3 py-1.5 text-sm text-slate-400">GitHub</li>
+              <li class="rounded-full border border-slate-700 px-3 py-1.5 text-sm text-slate-400">Responsive Design</li>
             </ul>
 
-            <div class="project-links">
-              <a href="index.html">View Homepage</a>
-              <a href="#">Repository</a>
+            <div class="mt-auto flex flex-wrap gap-4">
+              <a href="index.html" class="font-semibold text-sky-400 hover:underline focus-visible:underline">
+                View Homepage
+              </a>
+              <a href="#" class="font-semibold text-sky-400 hover:underline focus-visible:underline">
+                Repository
+              </a>
             </div>
           </article>
 
-          <article class="project-card">
-            <div class="project-status planned">
-              <span class="status-dot"></span>
+          <article
+            class="flex min-h-[300px] flex-col rounded-2xl border border-slate-700 bg-slate-900 p-6 transition hover:-translate-y-1 hover:border-sky-400">
+            <div class="mb-4 inline-flex items-center gap-3 text-sm font-semibold text-yellow-400">
+              <span class="h-2.5 w-2.5 rounded-full bg-current"></span>
               Planned
             </div>
 
-            <h2>HTML/CSS Component Library</h2>
+            <h2 class="mb-4 text-2xl font-bold text-slate-50">
+              HTML/CSS Component Library
+            </h2>
 
-            <p>
+            <p class="mb-6 leading-7 text-slate-400">
               A reusable component library for cards, buttons, forms, navbars,
               hero sections, pricing layouts, and UI patterns.
             </p>
 
-            <ul class="project-tags" aria-label="Project technologies">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Flexbox</li>
-              <li>Grid</li>
+            <ul class="mb-8 mt-4 flex flex-wrap gap-3" aria-label="Project technologies">
+              <li class="rounded-full border border-slate-700 px-3 py-1.5 text-sm text-slate-400">HTML</li>
+              <li class="rounded-full border border-slate-700 px-3 py-1.5 text-sm text-slate-400">CSS</li>
+              <li class="rounded-full border border-slate-700 px-3 py-1.5 text-sm text-slate-400">Flexbox</li>
+              <li class="rounded-full border border-slate-700 px-3 py-1.5 text-sm text-slate-400">Grid</li>
             </ul>
 
-            <div class="project-links">
-              <a href="#">Planned Build</a>
-              <a href="roadmap.html">Roadmap</a>
+            <div class="mt-auto flex flex-wrap gap-4">
+              <a href="#" class="font-semibold text-sky-400 hover:underline focus-visible:underline">
+                Planned Build
+              </a>
+              <a href="roadmap.html" class="font-semibold text-sky-400 hover:underline focus-visible:underline">
+                Roadmap
+              </a>
             </div>
           </article>
         </div>
       </div>
     </section>
   </main>
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>&copy; 2026 Joseph Chu. Built with HTML and CSS.</p>
-      <nav class="footer-nav" aria-label="footer navigation">
-        <a href="index.html">Home</a>
-        <a href="roadmap.html">Roadmap</a>
-        <a href="projects.html">Projects</a>
-        <a href="learning-log.html">Learning Log</a>
+  <footer class="border-t border-slate-700 py-8">
+    <div class="mx-auto flex w-[min(100%-2rem,1120px)] flex-col gap-4 md:flex-row md:items-center md:justify-between">
+      <p class="text-sm text-slate-400">
+        &copy; 2026 Joseph Chu. Built with HTML, CSS, and Tailwind CSS.
+      </p>
+
+      <nav class="flex flex-wrap gap-4" aria-label="Footer navigation">
+        <a href="index.html" class="text-sm text-slate-400 hover:text-sky-400 focus-visible:text-sky-400">
+          Home
+        </a>
+
+        <a href="roadmap.html" class="text-sm text-slate-400 hover:text-sky-400 focus-visible:text-sky-400">
+          Roadmap
+        </a>
+
+        <a href="projects.html" class="text-sm text-slate-400 hover:text-sky-400 focus-visible:text-sky-400">
+          Projects
+        </a>
+
+        <a href="learning-log.html" class="text-sm text-slate-400 hover:text-sky-400 focus-visible:text-sky-400">
+          Learning Log
+        </a>
       </nav>
     </div>
   </footer>
